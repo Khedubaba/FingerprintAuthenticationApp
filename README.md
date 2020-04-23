@@ -9,9 +9,9 @@ to use it as it completely manage new fingeorint entry on device and unique key 
 Note: 
 1. You need API Level 23 or greater to use FingerprintManager
 
-2. Since API 28 FingerprintManage is depricated and is replaced by BiometricPrompt 
+2. Since API 28 FingerprintManager is depricated and is replaced by BiometricPrompt 
 
-#Links:
+# Links:
 
 1. BiometricPrompt:
 
