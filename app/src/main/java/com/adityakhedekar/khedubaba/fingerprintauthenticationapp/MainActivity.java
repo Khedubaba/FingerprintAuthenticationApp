@@ -25,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
     private FingerprintManager mFingerprintManager;
     private KeyguardManager mKeyguardManager;
 
+    private FingerprintHandler fingerprintHandler;
+
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
@@ -49,7 +51,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     protected void setFingerprintHandler(){
-        FingerprintHandler fingerprintHandler = new FingerprintHandler(MainActivity.this);
+         fingerprintHandler = new FingerprintHandler(this);
+         fingerprintHandler.startAuth(mFingerprintManager, null);
     }
 
     @Override
