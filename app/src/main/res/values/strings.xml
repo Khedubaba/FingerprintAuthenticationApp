@@ -2,5 +2,9 @@
     <string name="app_name">Fingerprint Authentication App</string>
     <string name="fingerprint_authentication">Fingerprint Authentication</string>
     <string name="fingerprnit_icon">Fingerprnit Icon</string>
-    <string name="place_your_finge_on_the_scanner_to_proceed">Place your finge on the scanner to proceed</string>
+    <string name="place_your_finge_on_the_scanner_to_proceed">Place your finger on the scanner to proceed</string>
+    <string name="fingerprint_scanner_not_detected">Fingerprint scanner nor detected in device</string>
+    <string name="permission_fingerprint_scanner_not_granted">Permission to user fingerprint scanner Not Granted</string>
+    <string name="add_atleast_one_type_lock">Add at least one type of lock to your phone in settings</string>
+    <string name="add_atleast_one_fingerprint">You should add atleast one fingerprint in your device to use this feature</string>
 </resources>
