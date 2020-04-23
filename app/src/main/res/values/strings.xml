@@ -7,4 +7,5 @@
     <string name="permission_fingerprint_scanner_not_granted">Permission to user fingerprint scanner Not Granted</string>
     <string name="add_atleast_one_type_lock">Add at least one type of lock to your phone in settings</string>
     <string name="add_atleast_one_fingerprint">You should add atleast one fingerprint in your device to use this feature</string>
+    <string name="welcome">WELCOME</string>
 </resources>

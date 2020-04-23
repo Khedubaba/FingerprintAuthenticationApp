@@ -3,9 +3,11 @@ package com.adityakhedekar.khedubaba.fingerprintauthenticationapp;
 import android.annotation.TargetApi;
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.hardware.fingerprint.FingerprintManager;
 import android.os.Build;
 import android.os.CancellationSignal;
+import android.os.CountDownTimer;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -15,6 +17,7 @@ import androidx.core.content.ContextCompat;
 public class FingerprintHandler extends FingerprintManager.AuthenticationCallback {
 
     private Context context;
+    Intent intent;
 
     FingerprintHandler(Context context){
         this.context = context;
@@ -59,6 +62,21 @@ public class FingerprintHandler extends FingerprintManager.AuthenticationCallbac
         else {
             paraLable.setTextColor(ContextCompat.getColor(context, R.color.colorPrimaryDark));
             imageView.setImageResource(R.mipmap.action_done);
+
+            intent = new Intent(context, WelcomeActivity.class);
+            intent.putExtra("name", "Welcome");
+
+            new CountDownTimer(1000, 1000){
+                @Override
+                public void onTick(long millisUntilFinished) {
+
+                }
+
+                @Override
+                public void onFinish() {
+                    context.startActivity(intent);
+                }
+            }.start();
         }
     }
 }
